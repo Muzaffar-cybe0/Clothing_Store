@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./savedP.css";
+import "./savedP.scss";
 import GlobalStore from "../../store/.store";
 import Navbar from "../Navbar";
 import { Link } from "react-router-dom";

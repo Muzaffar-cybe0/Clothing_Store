@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import { useParams } from 'react-router'
-import './details.css/detail.css'
+import './details.css/detail.scss'
 export default function Details() {
      const {itemId} = useParams();
      const [item, setItem] = useState({});
@@ -22,10 +22,10 @@ export default function Details() {
          <div className="item_C-child-2">
           <h1>{item.title}</h1>
           <p><strong>Category:</strong> {item.category}</p>
-          <p><strong>Price:</strong> {item.price}</p>
-          <p><strong>Rating:</strong> {item.rating?.rate}</p>
-          <p><strong>Votes:</strong> {item.rating?.count}</p>
-          <p>{item.description}</p>
+          <p><strong>Price:</strong> {item.price}$ </p>
+          <p><strong>Rating:</strong> {item.rating?.rate} ⭐️</p>
+          <p><strong>Votes:</strong> {item.rating?.count} 🗳</p>
+          <p>About: {item.description}</p>
          </div>
      </div>
     </div>

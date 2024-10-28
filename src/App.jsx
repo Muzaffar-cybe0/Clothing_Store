@@ -5,6 +5,7 @@ import MainBody from "./pages/MainBody";
 import Details from "./pages/Details";
 import GlobalStore from "./store/.store";
 import Saved_P from "./pages/Saved_product_files/Saved_P";
+import Search from "./components/Search";
 
 function App() {
   const navigate = useNavigate();
@@ -27,6 +28,7 @@ function App() {
           <Route path="/main_body" element={<MainBody />} />
           <Route path="/details/:itemId" element={<Details />} />
           <Route path="/savedProducts" element={<Saved_P/>} />
+          <Route path="/search" element={<Search/>} />
         </Routes>
       </GlobalStore.Provider>
     </div>
